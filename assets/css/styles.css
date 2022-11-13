@@ -592,6 +592,7 @@ footer {
         margin: 0;
         height: 65px;
         /*backdrop-filter: blur(0);*/
+        background: #FFF;
     }
 
     .top-footer-section {
