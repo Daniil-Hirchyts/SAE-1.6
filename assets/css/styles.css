@@ -66,7 +66,7 @@ header {
     inset -7px -7px 20px rgba(255, 255, 255, 0.1),
     0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
     transition: box-shadow .25s ease !important;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(170, 198, 246, 0.25) 46%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(234, 241, 251, 1) 46%, rgba(255, 255, 255, 1) 100%);
 }
 
 .logo-bar {
