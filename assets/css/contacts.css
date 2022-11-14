@@ -68,3 +68,7 @@ div.adresseIndicator > p {
 article > div > div.adresseIndicator {
     padding-top: 60%;
 }
+
+div.form > p {
+    color: black;
+}
