@@ -53,19 +53,30 @@ div.text > p:nth-child(2) {
     height: 30px;
 }
 
-div.adresseIndicator > p {
+.adresseIndicator {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.adresseIndicator p {
     line-height: 1.1;
     font-family: 'Urbanist', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
-    margin: 0;
+    /*margin: 0;*/
     gap: 10px;
     display: flex;
     text-align: center;
-    padding : 30px 0 0 10%;
     flex-direction: row;
     justify-content: left;
+}
+
+.adresseIndicator img {
+    filter: invert(1);
+
 }
 
 article > div > div.adresseIndicator {
