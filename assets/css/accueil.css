@@ -134,6 +134,7 @@
 /*TODO !------------------SECTION BOXES------------------!*/
 
 .boxes {
+    padding-top: 80px !important;
     background: #FFF;
 }
 
@@ -221,7 +222,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 0 0 250px 0;
+    padding: 0 0 120px 0;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
 }
