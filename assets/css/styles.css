@@ -102,11 +102,10 @@ header {
     -7px -7px 20px rgba(255, 255, 255, 1),
     inset 0 0 4px rgba(255, 255, 255, .2),
     inset 7px 7px 15px rgba(55, 84, 170, 0.1),
-    inset -7px -7px 20px rgba(255, 255, 255, 0.1),
-    0 0 4px rgba(255, 255, 255, 0.1) !important;
+    inset -7px -7px 20px rgba(255, 255, 255, 0.2),
+    0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
     transition: box-shadow .25s ease !important;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(170, 198, 246, 0.25) 46%, rgba(255, 255, 255, 0.25) 100%);
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
