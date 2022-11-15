@@ -397,7 +397,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(139deg, rgb(231, 212, 250) 0%, rgba(233, 240, 253, 1) 17%, rgb(202, 180, 243) 46%, rgb(170, 198, 246) 70%, rgba(118, 104, 222, 1) 100%);
+    background: linear-gradient(139deg, rgb(231, 212, 250) 0%, rgba(233, 240, 253, 1) 17%, rgb(218, 202, 248) 46%, rgb(170, 198, 246) 70%, rgb(160, 150, 237) 100%);
 }
 
 section {
