@@ -7,51 +7,61 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 40px 0;
-    background-color: red;
+    background-color: #fff;
+    border-radius: 10px;
 }
-
-.contain{
-    text-align: justify;
-    color: black;
-    padding: 40px;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
-.card1 {
+.titre {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 90%;
     height: 30%;
-    background: #FFF;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(55, 84, 170, .15),
-    -5px -5px 20px rgba(255, 255, 255, 1),
+    background: rgb(255, 255, 255);
+    box-shadow: 9px 9px 18px rgba(55, 84, 170, .15),
+    -10px -10px 20px rgba(255, 255, 255, 1),
     inset 0 0 4px rgba(255, 255, 255, .2),
     inset 7px 7px 15px rgba(55, 84, 170, 0.1),
     inset -7px -7px 20px rgba(255, 255, 255, 0.2),
     0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
-    margin: 0 0 40px 0;
-    padding: 10px 50px 50px 50px;
-
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(170, 198, 246, 0.5) 46%, rgba(255, 255, 255, 0.5) 100%);
 }
 
 h1{
     font-size: 30px;
     font-weight: 700;
-    color: red;
     margin: 0 0 50px 0;
 }
 
-.card2 {
+
+.card1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(55, 84, 170, .15),
+    -5px -5px 20px rgba(255, 255, 255, 1),
+    inset 0 0 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
+    inset -7px -7px 20px rgba(255, 255, 255, 0.2),
+    0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
+    margin: 25px 0 40px 0;
+    padding: 10px 50px 50px 50px;
+
+}
+
+
+.card2{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,7 +80,7 @@ h1{
     padding: 10px 50px 50px 50px;
 }
 
-.card3 {
+.card3{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,4 +97,21 @@ h1{
     0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
     margin: 0 0 40px 0;
     padding: 10px 50px 50px 50px;
+}
+
+.main .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.part1{
+    margin: 20px 0 0 10px;
+}
+
+.text{
+    margin: 0 0 0 50px;
 }
