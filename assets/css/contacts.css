@@ -5,7 +5,6 @@
 }
 
 .form-box{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 30%);
     padding-top: 20px;
     padding-bottom: 150px;
     display: flex;
@@ -236,18 +235,10 @@ form > div > div > input:hover, textarea:hover {
     background: rgba(255, 255, 255, 0);
 }
 
-form > div > div > input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-    color: rgba(7, 7, 8, 0.8);
-}
-
-form > div > div > input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: rgba(7, 7, 8, 0.2);
-}
-
 #boxes-t2 {
     padding: 120px 0 !important;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(202, 180, 243, 0) 20%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 30%);
 }
 
 #submit {
