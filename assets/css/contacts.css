@@ -2,13 +2,15 @@
 .container{
     animation-duration: 2.5s;
     animation-name: slidetop;
+    max-width: 85%;
 }
 
 .form-box{
-    padding-top: 215px;
+    padding-top: 1%;
     padding-bottom: 150px;
     display: flex;
     flex-direction: column;
+    height: 80%;
 }
 
 .blurBox {
@@ -26,15 +28,16 @@
     border-radius: 30px 0 0 30px;
     padding: 20px;
     width: 40%;
-    height: 600px;
-    flex-direction: column;
+    height: 800px;
     justify-content: space-between;
+    flex-direction: column;
     z-index: 4;
+    overflow-x: hidden;
 }
 
 
 .form {
-    height: 600px;
+    height: 800px;
     width: 60%;
     padding: 20px;
     border-radius: 0 30px 30px 0;
@@ -80,6 +83,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 2;
 }
 
 .adresseIndicatorV2 p {
@@ -150,8 +154,11 @@ div.form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: flex-start;
-    padding: 70px 5% 0 5%  ;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5% 0 5%;
+    flex-grow: 2 ;
+    flex-shink: 1;
 }
 
 .form > p:nth-child(1) {
@@ -159,6 +166,16 @@ div.form{
     font-size: 30px;
     font-weight: 600;
 }
+
+/*#cercle {*/
+/*    filter: invert(100%);*/
+/*    opacity: 50%;*/
+/*    scale: 1.5;*/
+/*    z-index: 1;*/
+/*    flex-shrink: 1;*/
+/*    flex-grow: 1;*/
+/*    flex-direction: column;*/
+/*}*/
 
 form {
     display: flex;
@@ -181,23 +198,31 @@ form > div >div > p{
     color: #070708;
     font-size: 15px;
     font-weight: 600;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 
 div.haut {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 
 div.mid {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 div.bas {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 
 div.submit {
@@ -218,6 +243,8 @@ form > div > div > input, textarea {
     border-bottom: 2px solid rgba(7, 7, 8, 0.2);
     background: rgba(255, 255, 255, 0);
     resize: none;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 
 form > div > div > input::placeholder, textarea::placeholder {
@@ -355,7 +382,7 @@ form > div > div > input:hover, textarea:hover {
     @keyframes slidetopbox {
         from {
             margin-top: 100%;
-            width: 100%;
+            width: 70%;
         }
 
         to {
