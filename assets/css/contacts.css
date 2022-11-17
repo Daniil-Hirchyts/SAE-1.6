@@ -1,7 +1,15 @@
-.form-box {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%);
+
+.container{
+    animation-duration: 2.5s;
+    animation-name: slidetop;
+}
+
+.form-box{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 30%);
     padding-top: 20px;
     padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .blurBox {
@@ -25,6 +33,7 @@
     z-index: 4;
 }
 
+
 .form {
     height: 600px;
     width: 60%;
@@ -43,11 +52,14 @@
     backdrop-filter: blur(100px);
 }
 
+
+
 .text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 
 .text > p:nth-child(1) {
     font-size: 30px;
@@ -60,7 +72,7 @@
     color: #fff;
 }
 
-.logo {
+.logo{
     width: 30px;
     height: 30px;
 }
@@ -69,6 +81,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.adresseIndicatorV2 p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D100C;
+    gap: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: left;
 }
 
 .adresseIndicator p {
@@ -86,12 +109,50 @@
     filter: invert(1);
 }
 
-.form {
+.boxes-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.boxes .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    /*width: 100%;*/
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 33%;
+    padding: 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(100px);
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0 0 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
+    inset -7px -7px 20px rgba(255, 255, 255, 0.1),
+    0 0 4px rgba(255, 255, 255, 0.1) !important;
+    transition: box-shadow .25s ease !important;
+    animation-duration: 2.5s;
+    animation-name: slidetop;
+}
+
+div.form{
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
-    padding: 70px 5% 0 5%;
+    padding: 70px 5% 0 5%  ;
 }
 
 .form > p:nth-child(1) {
@@ -117,7 +178,7 @@ div > input, textarea {
     color: #070708;
 }
 
-form > div > div > p {
+form > div >div > p{
     color: #070708;
     font-size: 15px;
     font-weight: 600;
@@ -134,7 +195,6 @@ div.mid {
     flex-direction: row;
     gap: 20px;
 }
-
 div.bas {
     display: flex;
     flex-direction: column;
@@ -146,7 +206,7 @@ div.submit {
     flex-direction: row;
     gap: 20px;
     justify-content: flex-end;
-    transition: transform 0.25s ease;
+    transition: transform 0.25s ease ;
 }
 
 div.submit:hover {
@@ -176,6 +236,20 @@ form > div > div > input:hover, textarea:hover {
     background: rgba(255, 255, 255, 0);
 }
 
+form > div > div > input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: rgba(7, 7, 8, 0.8);
+}
+
+form > div > div > input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: rgba(7, 7, 8, 0.2);
+}
+
+#boxes-t2 {
+    padding: 120px 0 !important;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(202, 180, 243, 0) 20%);
+}
+
 #submit {
     font-size: 20px;
     font-weight: 600;
@@ -187,7 +261,7 @@ form > div > div > input:hover, textarea:hover {
     justify-content: center;
 }
 
-#submit button {
+#submit button{
     border: none;
     display: flex;
     flex-direction: row;
@@ -200,11 +274,23 @@ form > div > div > input:hover, textarea:hover {
     transform: scale(1.5);
 }
 
-#arrow_submit {
+#arrow_submit{
     display: flex;
     flex-direction: row;
     width: 20px;
     height: 20px;
+}
+
+@keyframes slidetop {
+    from {
+        margin-top: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -212,23 +298,24 @@ form > div > div > input:hover, textarea:hover {
         flex-direction: column;
         height: 100%;
     }
-
     .blurBox {
         width: 100%;
         border-radius: 30px 30px 0 0;
     }
-
     .form {
         width: 100%;
         border-radius: 0 0 30px 30px;
     }
-
     .adresseIndicator p {
         font-size: 15px;
     }
-
-    .haut, .mid, .bas {
-        display: flex;
+    div.haut {
         flex-direction: column;
     }
+    div.mid {
+        flex-direction: column;
     }
+    div.bas {
+        flex-direction: column;
+    }
+}
