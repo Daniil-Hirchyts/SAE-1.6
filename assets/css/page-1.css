@@ -13,11 +13,117 @@
     width: 100%;
     padding-bottom: 150px;
 }
+.subtitre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.subtitre img {
+    width: 35px;
+    height: 35px;
+}
+
+.keywords {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.keyword {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 105px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    flex: 0 0 auto;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
+    border-radius: 30px;
+    color: #070708;
+    transition: background-color, background, 0.25s ease-out 100ms;
+    box-shadow: 3px 4px 6px 1px rgba(7, 15, 25, 0.15),
+    -2px -2px 4px 2px rgba(255, 255, 255, 1),
+    inset -14px -14px 20px -10px rgba(0, 0, 0, 0.1),
+    inset 14px 14px 20px -10px rgba(255, 255, 255, 0.5) !important;
+}
+
+.keyword:hover {
+    background: radial-gradient(circle, rgb(255, 255, 255) 13%, rgb(255, 255, 255) 100%);
+}
 
 .titre-section .container {
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
+/*TODO !------------------SOMMAIRE SECTION------------------!*/
+
+
+.sommaire{
+    padding-bottom: 200px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(202, 180, 243, 0) 70%, rgba(255, 255, 255, 1) 100%);
+}
+
+.sommaire .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    gap: 35px;
+}
+
+
+.box img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    min-width: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 30px;
+}
+
+
+
+/*TODO !------------------CARD SECTION------------------!*/
 
 .card-section {
     padding: 0 0 120px 0;
@@ -44,12 +150,34 @@
     padding: 20px;
 }
 
-h1{
+h1 {
+    padding: 20px 0 0 0;
     text-align: center;
+    border-top: 3px solid #000;
 }
 
 h2 {
     padding: 20px 0 0 0;
 }
+
+.text-section p:nth-child(2) {
+    padding: 20px 0 0 0;
+}
+
+/*TODO !------------------MEDIA QUERIES------------------!*/
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+
 
 
