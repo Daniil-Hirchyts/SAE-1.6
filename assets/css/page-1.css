@@ -1,117 +1,62 @@
-body {
+.titre-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+
+}
+
+.titre-section .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    padding: 0 0 120px 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
+}
+
+.card-section .container{
     display: flex;
     flex-direction: column;
-    justify-content: initial;
-    align-items: initial;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 95%;
-    margin: 40px 0;
-    background-color: #fff;
-    border-radius: 10px;
-}
-.titre {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 30%;
-    border-radius: 20px;
-    background: rgb(255, 255, 255);
-    box-shadow: 9px 9px 18px rgba(55, 84, 170, .15),
-    -10px -10px 20px rgba(255, 255, 255, 1),
-    inset 0 0 4px rgba(255, 255, 255, .2),
-    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
-    inset -7px -7px 20px rgba(255, 255, 255, 0.2),
-    0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(170, 198, 246, 0.5) 46%, rgba(255, 255, 255, 0.5) 100%);
-}
-
-h1{
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 0 50px 0;
-}
-
-
-.card1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 30%;
-    background: #FFF;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(55, 84, 170, .15),
-    -5px -5px 20px rgba(255, 255, 255, 1),
-    inset 0 0 4px rgba(255, 255, 255, .2),
-    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
-    inset -7px -7px 20px rgba(255, 255, 255, 0.2),
-    0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
-    margin: 25px 0 40px 0;
-    padding: 10px 50px 50px 50px;
-
-}
-
-
-.card2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 30%;
-    background: #FFF;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(55, 84, 170, .15),
-    -5px -5px 20px rgba(255, 255, 255, 1),
-    inset 0 0 4px rgba(255, 255, 255, .2),
-    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
-    inset -7px -7px 20px rgba(255, 255, 255, 0.2),
-    0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
-    margin: 0 0 40px 0;
-    padding: 10px 50px 50px 50px;
-}
-
-.card3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 30%;
-    background: #FFF;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(55, 84, 170, .15),
-    -5px -5px 20px rgba(255, 255, 255, 1),
-    inset 0 0 4px rgba(255, 255, 255, .2),
-    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
-    inset -7px -7px 20px rgba(255, 255, 255, 0.2),
-    0 0 4px rgba(255, 255, 255, 0.1), 0 0 3px rgba(0, 0, 0, 0.2) !important;
-    margin: 0 0 40px 0;
-    padding: 10px 50px 50px 50px;
-}
-
-.main .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    gap: 50px;
 }
 
-.part1{
-    margin: 20px 0 0 10px;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0 0 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
+    inset -7px -7px 20px rgba(255, 255, 255, 0.1),
+    0 0 4px rgba(255, 255, 255, 0.1) !important;
+    transition: box-shadow .25s ease !important;
+    backdrop-filter: blur(100px);
+
 }
 
-.text{
-    margin: 0 0 0 50px;
+h1 {
+    text-align: center;
 }
+
+h2 {
+    padding: 20px 0 0 0;
+}
+
