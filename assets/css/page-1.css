@@ -76,8 +76,6 @@
 
 .keyword:hover {
     transform: scale(1.1);
-    text-decoration: underline;
-    text-decoration-color: #FFF;
 }
 
 .keyword:after {
