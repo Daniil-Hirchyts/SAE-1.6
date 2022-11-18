@@ -6,7 +6,6 @@
 }
 
 .form-box{
-    padding-top: 1%;
     padding-bottom: 150px;
     display: flex;
     flex-direction: column;
@@ -28,7 +27,7 @@
     border-radius: 30px 0 0 30px;
     padding: 20px;
     width: 40%;
-    height: 800px;
+    height: 700px;
     justify-content: space-between;
     flex-direction: column;
     z-index: 4;
@@ -37,7 +36,7 @@
 
 
 .form {
-    height: 800px;
+    height: 700px;
     width: 60%;
     padding: 20px;
     border-radius: 0 30px 30px 0;
@@ -158,7 +157,7 @@ div.form{
     justify-content: center;
     padding: 20px 5% 0 5%;
     flex-grow: 2 ;
-    flex-shink: 1;
+    flex-shrink: 1;
 }
 
 .form > p:nth-child(1) {
@@ -306,7 +305,7 @@ form > div > div > input:hover, textarea:hover {
     }
 
     to {
-        margin-top: 0%;
+        margin-top: 0;
         width: 100%;
     }
 }
@@ -364,10 +363,18 @@ form > div > div > input:hover, textarea:hover {
     .box {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 90%;
         animation-duration: 3s;
         animation-name: slidetopbox;
     }
+    h3 {
+        font-size: min(14vw, 35px);
+    }
+
+    div.box > p {
+        font-size: min(10vw, 25px);
+    }
+
     @keyframes slidetop {
         from {
             margin-top: 100%;
@@ -375,19 +382,19 @@ form > div > div > input:hover, textarea:hover {
         }
 
         to {
-            margin-top: 0%;
+            margin-top: 0;
             width: 100%;
         }
     }
     @keyframes slidetopbox {
         from {
             margin-top: 100%;
-            width: 70%;
+            width: 90%;
         }
 
         to {
-            margin-top: 0%;
-            width: 70%;
+            margin-top: 0;
+            width: 90%;
         }
     }
 }
