@@ -13,6 +13,7 @@
     width: 100%;
     padding-bottom: 100px;
 }
+
 .subtitre {
     display: flex;
     flex-direction: column;
@@ -76,6 +77,7 @@
 .keyword:hover {
     transform: scale(1.1);
     text-decoration: underline;
+    text-decoration-color: #FFF;
 }
 
 .keyword:after {
@@ -125,7 +127,7 @@ h2 {
 /*TODO !------------------SOMMAIRE SECTION------------------!*/
 
 
-.sommaire{
+.sommaire {
     padding-bottom: 100px;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(202, 180, 243, 0) 70%, rgba(255, 255, 255, 1) 100%);
@@ -136,7 +138,7 @@ h2 {
     align-items: center;
 }
 
-.boxes-section{
+.boxes-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +156,6 @@ h2 {
     justify-content: right;
     align-items: flex-end;
 }
-
 
 
 .box img {
@@ -179,7 +180,7 @@ h2 {
 
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -208,7 +209,6 @@ h2 {
     font-weight: 900;
     padding: 0 0 20px 0;
 }
-
 
 
 /*TODO !------------------CARD SECTION------------------!*/
