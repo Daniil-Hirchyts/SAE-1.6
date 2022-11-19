@@ -1,12 +1,11 @@
 
 .container{
     animation-duration: 1.5s;
-    animation-name: slidetop;
     max-width: 85%;
 }
 
 .form-box{
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -146,8 +145,6 @@
     inset -7px -7px 20px rgba(255, 255, 255, 0.1),
     0 0 4px rgba(255, 255, 255, 0.1) !important;
     transition: box-shadow .25s ease !important;
-    animation-duration: 1.5s;
-    animation-name: slidetop;
 }
 
 div.form{
@@ -307,7 +304,7 @@ form > div > div > input:hover, textarea:hover {
 }
 
 #boxes-t2 {
-    padding: 100px 0 !important;
+    padding: 0 0 100px 0 !important;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 30%);
 }
@@ -341,18 +338,6 @@ form > div > div > input:hover, textarea:hover {
     flex-direction: row;
     width: 20px;
     height: 20px;
-}
-
-@keyframes slidetop {
-    from {
-        margin-top: 100%;
-        width: 100%;
-    }
-
-    to {
-        margin-top: 0;
-        width: 100%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -416,8 +401,6 @@ form > div > div > input:hover, textarea:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
-        animation-duration: 3s;
-        animation-name: slidetopbox;
     }
     h3 {
         font-size: min(14vw, 35px);
@@ -427,28 +410,5 @@ form > div > div > input:hover, textarea:hover {
     }
     div.box > p {
         font-size: min(10vw, 25px);
-    }
-
-    @keyframes slidetop {
-        from {
-            margin-top: 100%;
-            width: 100%;
-        }
-
-        to {
-            margin-top: 0;
-            width: 100%;
-        }
-    }
-    @keyframes slidetopbox {
-        from {
-            margin-top: 100%;
-            width: 100%;
-        }
-
-        to {
-            margin-top: 0;
-            width: 100%;
-        }
     }
 }
