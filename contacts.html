@@ -66,15 +66,13 @@
             <div class="blurBox">
                 <div class="text">
                     <p>Vous souhaitez avoir des informations ?</p>
-                    <p>Remplissez notre formulaire et notre équipe vous répondra dans les 24h. </p>
+                    <p>Remplissez notre formulaire et notre équipe vous répondra dans les 24h.</p>
                 </div>
-                <div class="img">
-                    <img src="assets/images/img_contact.png" alt="contacts">
-                </div>
+                <img class="img" src="assets/images/img_contact.png" alt="contacts">
                 <div class="adresseIndicator">
                     <p><img class="logo" src="assets/images/phone-call.svg">06 12 34 56 78</p>
                     <p><img class="logo" src="assets/images/mail.svg">adresse@gmail.com</p>
-                    <p><img class="logo" src="assets/images/map-pin.svg">3 boulevard foch, montpellier</p>
+                    <p><img class="logo" src="assets/images/map-pin.svg">3 boulevard foch, Montpellier</p>
                 </div>
             </div>
             <div class="form">
@@ -84,12 +82,12 @@
                         <div>
                             <p>PRENOM</p>
                             <label for="prenom"></label>
-                            <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" tabindex="1" required>
+                            <input maxlength="30" minlength="2" type="text" id="prenom" name="prenom" placeholder="Votre prenom" tabindex="1" required>
                         </div>
                         <div>
                             <p>NOM</p>
                             <label for="nom"></label>
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom" tabindex="2" required>
+                            <input maxlength="30" minlength="2" type="text" id="nom" name="nom" placeholder="Votre nom" tabindex="2" required>
                         </div>
                     </div>
                     <div class="haut">
@@ -102,7 +100,7 @@
                         <div>
                             <p>PAYS</p>
                             <label for="pays"></label>
-                            <select tabindex="4" name="pays" id="pays">
+                            <select tabindex="4" name="pays"  id="pays">
                                 <option value="France" selected="selected"> </option>
                                 <option value="France">France </option>
                                 <option value="Afghanistan">Afghanistan </option>
@@ -171,7 +169,7 @@
                                 <option value="Feroe">Feroe </option>
                                 <option value="Fidji">Fidji </option>
                                 <option value="Finlande">Finlande </option>
-                                <option value="France">France </option>
+                                <option  class="noneOption" value="France" disabled selected hidden>France </option>
                                 <option value="Gabon">Gabon </option>
                                 <option value="Gambie">Gambie </option>
                                 <option value="Georgie">Georgie </option>
@@ -332,7 +330,7 @@
                         <div>
                             <p>CODE POSTAL</p>
                             <label for="cod_post"></label>
-                            <input type="text" id="cod_post" name="cod_post" placeholder="12345" pattern="[0-9]{5}" tabindex="5" required>
+                            <input maxlength="10" type="text" id="cod_post" name="cod_post" placeholder="12345" pattern="[0-9]{5}" tabindex="5" required>
                         </div>
                         <div>
                             <p>RENDEZ-VOUS ?</p>
@@ -365,7 +363,7 @@
                         <div>
                             <p>MESSAGE</p>
                             <label for="message"></label>
-                            <textarea id="message" name="message" placeholder="Votre message" tabindex="8" required></textarea>
+                            <textarea maxlength="250" id="message" name="message" placeholder="Votre message" tabindex="8" required></textarea>
                         </div>
                         <div id="submit">
                             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer<img id="arrow_submit" src="assets/images/arrow_submit.svg"></button>

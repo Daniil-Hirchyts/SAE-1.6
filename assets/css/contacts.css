@@ -1,5 +1,6 @@
 .form-box{
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -34,8 +35,8 @@
     width: 60%;
     padding: 20px;
     border-radius: 0 30px 30px 0;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
+    /*background: rgba(255, 255, 255, 0.75);*/
+    background: radial-gradient(circle, rgba(223, 233, 255, 0.75) 13%, rgba(255, 255, 255, 1) 90%, rgb(223, 233, 255) 120%);
     border: 1px solid rgba(255, 255, 255, 1);
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
     -7px -7px 20px rgba(255, 255, 255, 1),
@@ -45,24 +46,28 @@
     0 0 4px rgba(255, 255, 255, 0.1) !important;
     transition: box-shadow .25s ease !important;
     backdrop-filter: blur(100px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    /*padding: 0 5% 0 5%;*/
+    flex-grow: 2 ;
+    flex-shrink: 1;
 }
+
 
 .img {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    width: 100%;
-    left: -6px;
     scale: 2;
-    height: 100%;
-    z-index: 1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     filter: invert(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
 }
-
 
 .text {
     display: flex;
@@ -128,12 +133,11 @@
 }
 
 .boxes .container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    /*width: 100%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*gap: 40px;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 
 .box {
@@ -156,16 +160,7 @@
     transition: box-shadow .25s ease !important;
 }
 
-div.form{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5% 0 5%;
-    flex-grow: 2 ;
-    flex-shrink: 1;
-}
+
 
 .form > p:nth-child(1) {
     color: #070708;
@@ -173,20 +168,10 @@ div.form{
     font-weight: 600;
 }
 
-/*#cercle {*/
-/*    filter: invert(100%);*/
-/*    opacity: 50%;*/
-/*    scale: 1.5;*/
-/*    z-index: 1;*/
-/*    flex-shrink: 1;*/
-/*    flex-grow: 1;*/
-/*    flex-direction: column;*/
-/*}*/
-
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .radio {
@@ -197,7 +182,7 @@ form {
     gap: 10px;
 }
 
-div.radio > div {
+.radio > div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -213,7 +198,7 @@ div.radio > div {
     padding-top: 20px ;
 }
 
-div.radio > div > p {
+.radio > div > p {
     color: #070708;
     font-size: 16px;
     font-weight: 600;
@@ -234,7 +219,7 @@ input[type="radio"]{
 }
 
 .date{
-    color: rgba(7, 7, 8, 0.8);
+    color: #070708;
 }
 
 div > input, textarea, select {
@@ -259,7 +244,7 @@ form > div >div > p{
     flex-shrink: 1;
 }
 
-div.haut {
+.haut {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -267,7 +252,7 @@ div.haut {
     flex-shrink: 1;
 }
 
-div.bas {
+.bas {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -275,7 +260,7 @@ div.bas {
     flex-shrink: 1;
 }
 
-div.submit {
+.submit {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -283,33 +268,52 @@ div.submit {
     transition: transform 0.25s ease ;
 }
 
-div.submit:hover {
+#submit {
+    padding-top: 30px;
+}
+
+.submit:hover {
     transform: scale(1.5) translateX(10px);
 }
 
-form > div > div > input, textarea, select{
-    border: none;
-    padding: 5px 10px;
-    border-bottom: 2px solid rgba(7, 7, 8, 0.2);
-    background: rgba(255, 255, 255, 0);
-    resize: none;
-    flex-grow: 2;
-    flex-shrink: 1;
+#submit button {
+    cursor: pointer;
+
 }
+
+form > div > div > input, textarea, select{
+    /*border: none;*/
+    /*padding: 5px 10px;*/
+    /*border-bottom: 2px solid rgba(7, 7, 8, 0.2);*/
+    background: rgba(255, 255, 255, 1);
+    resize: none;
+    /*flex-grow: 2;*/
+    /*flex-shrink: 1;*/
+    box-shadow: 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgba(255, 255, 255, 0), inset 0 0 4px rgb(255 255 255 / 20%), inset 7px 7px 15px rgb(55 84 170 / 10%), inset -7px -7px 20px rgb(255 255 255 / 20%), 0 0 4px rgb(255 255 255 / 10%), 0 0 3px rgb(0 0 0 / 20%) !important;
+    transition: box-shadow, background, .25s ease !important;
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(170, 198, 246, 0.25) 46%, rgba(255, 255, 255, 0.25) 100%);*/
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
 
 form > div > div > input::placeholder, textarea::placeholder, select::placeholder{
     color: rgba(7, 7, 8, 0.2);
 }
 
 textarea {
-    height: 100px;
+    height: 100%;
+    resize: none;
+    padding: 20px;
 }
 
 form > div > div > input:hover, textarea:hover {
-    border: none;
-    padding: 5px 10px;
-    border-bottom: 2px solid rgba(7, 7, 8, 0.8);
-    background: rgba(255, 255, 255, 0);
+    /*border: none;*/
+    box-shadow: 3px 4px 6px 1px rgb(7 15 25 / 15%), -2px -2px 4px 2px rgb(255 255 255) !important;
+    border: 1px solid rgba(255, 255, 255, 1);
+
+    /*padding: 5px 10px;*/
+    /*border-bottom: 2px solid rgba(7, 7, 8, 0.8);*/
+    /*background: rgba(255, 255, 255, 0);*/
 }
 
 #boxes-t2 {
@@ -358,8 +362,8 @@ form > div > div > input:hover, textarea:hover {
     .blurBox {
         width: 100%;
         border-radius: 30px 30px 0 0;
-        align-items: center;
-        height : 500px;
+        align-items: flex-start;
+        height : 400px;
     }
     .form {
         width: 100%;
@@ -374,7 +378,7 @@ form > div > div > input:hover, textarea:hover {
         font-size: 15px;
     }
     .adresseIndicator{
-        align-items: center;
+        /*align-items: center;*/
     }
     .text{
         align-items: center;
@@ -392,7 +396,7 @@ form > div > div > input:hover, textarea:hover {
         flex-direction: column;
         gap: 40px;
         width: 100%;
-        padding: 60px 0!important;
+        /*padding: 60px 0!important;*/
     }
 
     .boxes-section{
@@ -424,4 +428,21 @@ form > div > div > input:hover, textarea:hover {
     .img {
         display: none;
     }
+
+    .box p {
+        font-size: min(10vw, 20px) !important;
+    }
+    .box h3 {
+        font-size: min(10vw, 30px) !important;
+    }
+
+    /*.haut > div {*/
+    /*    display: flex;*/
+    /*}*/
+
+    /*div > input, textarea, select {*/
+    /*    display: flex;*/
+    /*    */
+    /*    width: 100%;*/
+    /*}*/
 }
