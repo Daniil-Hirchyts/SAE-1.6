@@ -24,7 +24,8 @@
     justify-content: space-between;
     flex-direction: column;
     z-index: 4;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -46,6 +47,21 @@
     backdrop-filter: blur(100px);
 }
 
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    left: -6px;
+    scale: 2;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+}
 
 
 .text {
@@ -88,7 +104,6 @@
     flex-direction: row;
     justify-content: left;
 }
-
 .adresseIndicator p {
     font-size: 20px;
     font-weight: 600;
@@ -334,7 +349,7 @@ form > div > div > input:hover, textarea:hover {
     height: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .container {
         flex-direction: column;
         height: 100%;
@@ -405,5 +420,8 @@ form > div > div > input:hover, textarea:hover {
     }
     div.box > p {
         font-size: min(10vw, 25px);
+    }
+    .img {
+        display: none;
     }
 }
