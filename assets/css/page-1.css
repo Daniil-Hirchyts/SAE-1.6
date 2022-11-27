@@ -327,7 +327,7 @@ h2 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
 }
 .box-text-h2{
     color: white;
@@ -347,13 +347,30 @@ h2 {
 }
 
 .text2-2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 554px;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.text3{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: black;
-    color: white;
+    padding: 0 0 0 30px;
+    gap: 30px;
 }
+
+.text3 .box-text-h2{
+    color: white;
+    font-weight: bold;
+}
+
 /*TODO !------------------CARD SECTION------------------!*/
 
 .card-section {
