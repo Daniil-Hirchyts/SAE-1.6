@@ -161,7 +161,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
     width: 80%;
     gap: 50px;
@@ -416,6 +416,15 @@ h2 {
 @media (max-width: 768px) {
     .keyword {
         display: none;
+    }
+
+    .sommaire {
+        display: none;
+    }
+
+    .titre-section {
+        background: linear-gradient(180deg, rgba(202, 180, 243, 0) 70%, rgba(255, 255, 255, 1) 100%);
+        padding-bottom: 50px;
     }
 
     .box {
