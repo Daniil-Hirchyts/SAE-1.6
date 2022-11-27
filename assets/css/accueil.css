@@ -171,8 +171,23 @@
 }
 
 .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     font-weight: 500;
     font-size: 20px !important;
+    transition: transform 0.25s ease ;
+    cursor: pointer;
+}
+
+.link img {
+    width: 25px;
+    height: 25px;
+}
+.link:hover {
+    transform: scale(1.2) translateX(10px);
 }
 
 .boxes-section {
