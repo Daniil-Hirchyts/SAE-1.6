@@ -79,7 +79,7 @@
     transition: box-shadow .25s ease !important;
 }
 .multi-tab.m3 > div {
-    background-image: url("../images/test-image-2.png");
+    background-image: url("//test-image-2.png");
     background-size: cover;
     width: 100%;
     height: 250px;
