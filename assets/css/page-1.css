@@ -442,6 +442,57 @@ h2 {
     width: 100%;
 }
 
+/*TODO !------------------TEXT CSS------------------!*/
+
+.paragraphe_1 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
+
+.text_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.text_1 h2 {
+    font-size: min(20vw, 40px);
+    font-weight: 700;
+    color: #2A2C2E;
+}
+
+.text_1 p {
+    font-size: min(20vw, 20px);
+    font-weight: 400;
+    color: #2A2C2E;
+}
+
+.text_1_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.paragraphe_1 .container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+}
 /*TODO !------------------MEDIA QUERIES------------------!*/
 
 @media (max-width: 768px) {
@@ -488,7 +539,12 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-
+    .paragraphe_1 .container > div{
+        flex-direction: column;
+    }
+    .text_1_img{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
