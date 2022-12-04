@@ -32,7 +32,6 @@
 .subtitre img {
     width: 35px;
     height: 35px;
-    scale: 1;
     transition: 0.25s;
     animation: shake 2s ease-in-out infinite;
     transform: translate3d(0, 0, 0);
@@ -59,8 +58,11 @@
 }
 
 .subtitre img:hover {
-    scale: 1.2;
     transition: 0.5s;
+}
+
+.line-box-image img{
+    border-radius: 30px;
 }
 
 .keywords {

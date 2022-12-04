@@ -61,7 +61,7 @@
 .img {
     display: flex;
     flex-direction: column;
-    scale: 2;
+    transform: scale(2);
     filter: invert(100%);
     width: 100%;
     height: 100%;
@@ -130,14 +130,6 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-}
-
-.boxes .container {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*gap: 40px;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .box {
@@ -282,16 +274,10 @@ form > div >div > p{
 }
 
 form > div > div > input, textarea, select{
-    /*border: none;*/
-    /*padding: 5px 10px;*/
-    /*border-bottom: 2px solid rgba(7, 7, 8, 0.2);*/
     background: rgba(255, 255, 255, 1);
     resize: none;
-    /*flex-grow: 2;*/
-    /*flex-shrink: 1;*/
     box-shadow: 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgba(255, 255, 255, 0), inset 0 0 4px rgb(255 255 255 / 20%), inset 7px 7px 15px rgb(55 84 170 / 10%), inset -7px -7px 20px rgb(255 255 255 / 20%), 0 0 4px rgb(255 255 255 / 10%), 0 0 3px rgb(0 0 0 / 20%) !important;
     transition: box-shadow, background, .25s ease !important;
-    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(170, 198, 246, 0.25) 46%, rgba(255, 255, 255, 0.25) 100%);*/
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -307,13 +293,8 @@ textarea {
 }
 
 form > div > div > input:hover, textarea:hover {
-    /*border: none;*/
     box-shadow: 3px 4px 6px 1px rgb(7 15 25 / 15%), -2px -2px 4px 2px rgb(255 255 255) !important;
     border: 1px solid rgba(255, 255, 255, 1);
-
-    /*padding: 5px 10px;*/
-    /*border-bottom: 2px solid rgba(7, 7, 8, 0.8);*/
-    /*background: rgba(255, 255, 255, 0);*/
 }
 
 #boxes-t2 {
@@ -377,9 +358,6 @@ form > div > div > input:hover, textarea:hover {
     .adresseIndicator p {
         font-size: 15px;
     }
-    .adresseIndicator{
-        /*align-items: center;*/
-    }
     .text{
         align-items: center;
     }
@@ -396,7 +374,6 @@ form > div > div > input:hover, textarea:hover {
         flex-direction: column;
         gap: 40px;
         width: 100%;
-        /*padding: 60px 0!important;*/
     }
 
     .boxes-section{
@@ -435,14 +412,4 @@ form > div > div > input:hover, textarea:hover {
     .box h3 {
         font-size: min(10vw, 30px) !important;
     }
-
-    /*.haut > div {*/
-    /*    display: flex;*/
-    /*}*/
-
-    /*div > input, textarea, select {*/
-    /*    display: flex;*/
-    /*    */
-    /*    width: 100%;*/
-    /*}*/
 }

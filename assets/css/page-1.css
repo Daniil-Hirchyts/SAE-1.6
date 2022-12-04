@@ -10,7 +10,6 @@
 }
 
 .multi-tabs {
-    /*padding-top: 60px;*/
     padding-bottom: 60px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
 }
