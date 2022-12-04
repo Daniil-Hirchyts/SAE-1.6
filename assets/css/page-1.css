@@ -63,12 +63,11 @@
 
 .multi-tab.m1 > div:nth-child(1) {width: 66%;}
 .multi-tab.m1 > div:nth-child(2) {
-    background-image: url("/assets/images/gradient-5.jpg");
-    background-size: cover;
-    width: 33%;}
+    background: url("/assets/images/gradient-5.jpg") no-repeat center center / cover !important;
+    width: 33%;
+}
 .multi-tab.m2 > div:nth-child(1) {
-    background-image: url("/assets/images/gradient-7.jpg");
-    background-size: cover;
+    background: url("/assets/images/gradient-7.jpg") no-repeat center center / cover !important;
     width: 50%;}
 
 .multi-tab.m2 > div:nth-child(2) {width: 50%;}
@@ -78,8 +77,7 @@
     transition: box-shadow .25s ease !important;
 }
 .multi-tab.m3 > div {
-    background: url("/assets/images/test-image-2.png");
-    background-size: cover;
+    background: url("/assets/images/test-image-2.png") no-repeat center center / cover !important;
     width: 100%;
     height: 250px;
 }
